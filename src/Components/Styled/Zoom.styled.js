@@ -12,13 +12,16 @@ export const ZoomStyled = styled.div`
   z-index: 2;
 
   .inner {
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
     height: 90%;
     width: 90%;
   }
 
   img {
     object-fit: scale-down;
-    width: 100%;
+    width: 80%;
     height: 100%;
     border-radius: 10px;
   }
