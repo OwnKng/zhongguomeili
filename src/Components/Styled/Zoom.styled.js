@@ -13,7 +13,7 @@ export const ZoomStyled = styled.div`
 
   .inner {
     height: 90%;
-    width: 100%;
+    width: 90%;
   }
 
   img {
