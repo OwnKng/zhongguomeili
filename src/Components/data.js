@@ -1,0 +1,35 @@
+export const Shangrila = {
+  title: "Shangrila",
+  elevation: "photos/shangrila/elevation.mp4",
+  desc:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  photos: [
+    { one: "photos/shangrila/IMG_20191028_155609-01.jpeg" },
+    { two: "photos/shangrila/IMG_20191029_124146-PANO.jpeg" },
+    { three: "photos/shangrila/IMG_20191031_122740-01.jpeg" },
+    { four: "photos/shangrila/IMG_20191029_130625-01.jpeg" },
+    { five: "photos/shangrila/IMG_20191030_151008-01.jpeg" },
+    { six: "photos/shangrila/IMG_20191031_102106-01.jpeg" },
+    { seven: "photos/shangrila/IMG_20191031_111700-01.jpeg" },
+    { eight: "photos/shangrila/IMG_20191031_113144-01.jpeg" },
+    { nine: "photos/shangrila/IMG_20191031_114833-01.jpeg" },
+  ],
+};
+
+export const HuTiaXia = {
+  title: "Tiger Leaping Gorge",
+  elevation: "photos/hutiaoxia/elevation.mp4",
+  desc:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  photos: [
+    { one: "photos/hutiaoxia/IMG_20191026_103741-01.jpeg" },
+    { two: "photos/hutiaoxia/IMG_20191026_105607-01.jpeg" },
+    { three: "photos/hutiaoxia/IMG_20191027_114153-01.jpeg" },
+    { four: "photos/hutiaoxia/IMG_20191026_155336-01.jpeg" },
+    { five: "photos/hutiaoxia/IMG_20191026_134742-01.jpeg" },
+    { six: "photos/hutiaoxia/IMG_20191027_092649-01.jpeg" },
+    { seven: "photos/hutiaoxia/IMG_20191026_113443-01.jpeg" },
+    { eight: "photos/hutiaoxia/IMG_20191027_093704-01.jpeg" },
+    { nine: "photos/hutiaoxia/IMG_20191026_180326-01-01.jpeg" },
+  ],
+};
