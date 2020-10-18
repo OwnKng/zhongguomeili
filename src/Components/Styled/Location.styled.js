@@ -23,7 +23,7 @@ export const Container = styled.div`
 
   .intro {
     display: grid;
-    height: 250px;
+    min-height: 250px;
     grid-template-areas:
       "title title"
       "article article";
