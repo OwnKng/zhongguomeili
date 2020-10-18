@@ -40,6 +40,7 @@ export const Controls = styled.div`
     border-radius: 20px;
     border: 2px solid grey;
     padding: 0.6rem;
+    user-select: none;
   }
 `;
 
