@@ -5,7 +5,7 @@ export const Content = styled.div`
   max-width: 720px;
   margin: 0px auto;
   padding: 50px 0px;
-  background: #1f1e20;
+  background: rgb(29, 29, 29);
   border-left: 1px solid rgb(75, 75, 75);
   border-right: 1px solid rgb(75, 75, 75);
   display: grid;
@@ -24,7 +24,7 @@ export const Controls = styled.div`
   margin-top: 20px;
   top: 0px;
   position: sticky;
-  background: rgb(31, 30, 32);
+  background: rgb(29, 29, 29);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -46,13 +46,18 @@ export const Controls = styled.div`
 
 export const Header = styled.header`
   display: grid;
+  grid-column: 1 / -1;
   row-gap: 20px;
 
   grid-template-areas:
-    "title title"
-    "desc desc";
+    "title title title"
+    ". desc ."
+    "hero hero hero";
 
-  grid-template-columns: auto 100px;
+  grid-template-columns:
+    3rem
+    auto
+    3rem;
 `;
 
 export const Desc = styled.div`
@@ -60,13 +65,18 @@ export const Desc = styled.div`
 `;
 
 export const Hero = styled.img`
-  grid-column: 1 / -1;
+  grid-area: hero;
+  width: 100%;
+  border-top: 1px solid rgb(75, 75, 75);
 `;
 
 export const Title = styled.h1`
   margin: 0px auto;
+  padding: 1rem 0rem;
+  width: 100%;
   text-align: center;
   grid-area: title;
+  border-bottom: 1px solid rgb(75, 75, 75);
 `;
 
 export const LanguageToggle = styled.div`

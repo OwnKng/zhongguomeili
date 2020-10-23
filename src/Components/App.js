@@ -11,6 +11,7 @@ import {
   Desc,
   LanguageToggle,
   Title,
+  Hero,
   Footer,
 } from "./Styled/App.styled";
 
@@ -37,6 +38,7 @@ function App() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </Desc>
+          <Hero src='photos/china-map.png' alt='A 3d map of China' />
         </Header>
         <Controls>
           <div className='control' onClick={() => setLocation(HuTiaXia)}>

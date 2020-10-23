@@ -30,6 +30,7 @@ const Location = ({ setClicked, title, elevation, desc, photos }) => {
           </video>
         </div>
         <motion.div
+          key={title}
           className='intro'
           ref={ref}
           animate={{ opacity: inView ? 1 : 0 }}
