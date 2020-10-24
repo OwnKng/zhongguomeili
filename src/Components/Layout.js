@@ -14,6 +14,7 @@ import {
   Hero,
   Footer,
 } from "./Styled/App.styled";
+import Loadbar from "./Loadbar.js";
 
 const Layout = ({ children }) => {
   const { zoom } = useZoom();
@@ -50,6 +51,16 @@ const Layout = ({ children }) => {
           <Link className={isActive("Zhangye")} to='zhangye'>
             Zhangye
           </Link>
+          <Link className={isActive("Zhangjiajie")} to='zhangye'>
+            Zhangjiajie
+          </Link>
+          <Link className={isActive("Huangshan")} to='zhangye'>
+            Huangshan
+          </Link>
+          <Link className={isActive("Wuyishan")} to='zhangye'>
+            Wuyishan
+          </Link>
+          <Loadbar />
         </Controls>
         {children}
         <Footer>

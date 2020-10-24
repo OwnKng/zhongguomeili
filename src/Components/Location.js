@@ -16,8 +16,7 @@ const Location = ({ title, elevation, desc, photos }) => {
     rootMargin: "-10% 0%",
   });
 
-  const { active, setActive } = useActive();
-  console.log(active);
+  const {setActive} = useActive();
 
   useEffect(() => {
     setActive(title);

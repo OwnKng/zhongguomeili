@@ -28,13 +28,11 @@ export const Controls = styled.div`
   top: -1px;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem 0rem;
+  gap: 10px;
+  padding-top: 1rem;
   justify-content: center;
   place-items: center;
   z-index: 1;
-  border-top: none;
-  border-bottom: 1px solid rgb(75, 75, 75);
 
   .control {
     color: white;
@@ -51,6 +49,12 @@ export const Controls = styled.div`
     background: rgb(175, 175, 175);
   }
 `;
+
+export const Progress = styled.div`
+grid-column: 1 / -1;
+width: 100%;
+height: 1px;
+`
 
 export const Header = styled.header`
   display: grid;

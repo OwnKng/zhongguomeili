@@ -7,9 +7,9 @@ export const Container = styled.div`
 
   display: grid;
   grid-template-columns:
-    3rem
+    2rem
     auto
-    3rem;
+    2rem;
 
   > * {
     grid-column: 2;
@@ -24,7 +24,7 @@ export const Container = styled.div`
 
   .videoContainer {
     grid-column: 1 / -1;
-    height: 450px;
+    height: 400px;
   }
 
   video {
