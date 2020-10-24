@@ -51,3 +51,22 @@ export const zhangye = {
     { nine: "photos/zhangye/IMG_20191016_114007-01.jpeg" },
   ],
 };
+
+
+export const zhangjiajie = {
+  title: "Zhangjiajie",
+  elevation: "photos/zhangjiajie/elevation.mp4",
+  desc:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  photos: [
+    { one: "photos/zhangjiajie/IMG_20181017_092650~2.jpeg" },
+    { two: "photos/zhangjiajie/IMG_20181018_125235-01.jpeg" },
+    { three: "photos/zhangjiajie/IMG_20181017_100155~2.jpeg" },
+    { four: "photos/zhangjiajie/IMG_20181017_125104-01.jpeg" },
+    { five: "photos/zhangjiajie/IMG_20181017_133732-01.jpeg" },
+    { six: "photos/zhangjiajie/IMG_20181018_095631-01.jpeg" },
+    { seven: "photos/zhangjiajie/IMG_20181018_100043-01.jpeg" },
+    { eight: "photos/zhangjiajie/IMG_20181018_115459-01.jpeg" },
+    { nine: "photos/zhangjiajie/IMG_20181018_125235-01.jpeg" },
+  ],
+};

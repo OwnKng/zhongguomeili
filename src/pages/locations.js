@@ -1,7 +1,7 @@
 import React from "react";
 import Location from "../Components/Location";
 
-import { hutiaoxia, zhangye, shangrila } from "../Components/data";
+import { hutiaoxia, zhangye, shangrila, zhangjiajie } from "../Components/data";
 
 export const HuTiaoXia = () => {
   return <Location {...hutiaoxia} />;
@@ -14,3 +14,8 @@ export const Zhangye = () => {
 export const Shangrila = () => {
   return <Location {...shangrila} />;
 };
+
+export const Zhangjiajie = () => {
+  return <Location {...zhangjiajie} />;
+};
+

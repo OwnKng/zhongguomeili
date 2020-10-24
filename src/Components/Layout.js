@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
           <Link className={isActive("Zhangye")} to='zhangye'>
             Zhangye
           </Link>
-          <Link className={isActive("Zhangjiajie")} to='zhangye'>
+          <Link className={isActive("Zhangjiajie")} to='zhangjiajie'>
             Zhangjiajie
           </Link>
           <Link className={isActive("Huangshan")} to='zhangye'>
