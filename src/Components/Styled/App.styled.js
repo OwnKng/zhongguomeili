@@ -28,7 +28,7 @@ export const Controls = styled.div`
   top: -1px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  col-gap: 10px;
   padding-top: 1rem;
   justify-content: center;
   place-items: center;
@@ -54,6 +54,7 @@ export const Progress = styled.div`
 grid-column: 1 / -1;
 width: 100%;
 height: 1px;
+padding-top: 0.5rem;
 `
 
 export const Header = styled.header`
