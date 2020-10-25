@@ -5,8 +5,8 @@ export const Grid = styled.div`
   grid-gap: 5px;
   width: 100%;
   min-height: 1800px;
-  max-height: 2000px;
   margin-bottom: 2rem;
+  grid-template-rows: repeat(13, 150px);
 
   grid-template-areas:
     "one two"
