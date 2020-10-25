@@ -28,7 +28,7 @@ export const Controls = styled.div`
   top: -1px;
   display: flex;
   flex-wrap: wrap;
-  col-gap: 10px;
+  gap: 10px;
   padding-top: 1rem;
   justify-content: center;
   place-items: center;
