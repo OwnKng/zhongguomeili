@@ -28,7 +28,6 @@ export const Controls = styled.div`
   top: -1px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   padding-top: 1rem;
   justify-content: center;
   place-items: center;
@@ -37,6 +36,7 @@ export const Controls = styled.div`
   .control {
     color: white;
     text-decoration: none;
+    margin: 5px;
     font-size: 0.8rem;
     border-radius: 20px;
     border: 1px solid rgb(175, 175, 175);

@@ -4,12 +4,13 @@ export const Container = styled.div`
   margin: 0px auto;
   text-align: center;
   grid-column: 1 / -1 !important;
-
+  
   display: grid;
+
   grid-template-columns:
-    2rem
+    1rem
     auto
-    2rem;
+    1rem;
 
   > * {
     grid-column: 2;
@@ -24,7 +25,6 @@ export const Container = styled.div`
 
   .videoContainer {
     grid-column: 1 / -1;
-    height: 400px;
   }
 
   video {

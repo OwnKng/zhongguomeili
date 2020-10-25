@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useActive } from "./hooks";
 
 // Import other components
@@ -12,22 +11,18 @@ import { Grid } from "../Components/Styled/Grid.styled";
 
 const pageVariants = {
   in: {
-    opacity: 1,
+    opacity: 1
   },
   out: {
-    opacity: 0,
+    opacity: 0
   }
 }
 
 const pageTransitions = {
-  duration: 50
+  duration: 100
 }
 
 const Location = ({ title, elevation, desc, photos }) => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    rootMargin: "-10% 0%",
-  });
 
   const {setActive} = useActive();
 
@@ -36,7 +31,9 @@ const Location = ({ title, elevation, desc, photos }) => {
   }, [setActive, title]);
 
   return (
-    <motion.div initial="out" animate="in" exit="out" variants={pageVariants} transitions={pageTransitions}>
+    <motion.div initial="out" animate="in" exit="out" 
+    variants={pageVariants} transitions={pageTransitions}
+    style={{overflowX: "hidden"}}>
       <Container>
         <div className='videoContainer'>
           <video
@@ -49,15 +46,10 @@ const Location = ({ title, elevation, desc, photos }) => {
             <source src={elevation} type='video/mp4' />
           </video>
         </div>
-        <motion.div
-          key={title}
-          className='intro'
-          ref={ref}
-          animate={{ opacity: inView ? 1 : 0 }}
-        >
+        <div>
           <h1 className='title'>{title}</h1>
           <article>{desc}</article>
-        </motion.div>
+        </div>
         <Grid>
           {photos.map((photo, i) => (
             <Image photo={photo} />
