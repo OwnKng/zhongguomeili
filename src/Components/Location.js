@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useActive } from "./hooks";
 
@@ -9,6 +9,19 @@ import Image from "./Image";
 // Importing my own styled components
 import { Container } from "../Components/Styled/Location.styled";
 import { Grid } from "../Components/Styled/Grid.styled";
+
+const pageVariants = {
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  }
+}
+
+const pageTransitions = {
+  duration: 50
+}
 
 const Location = ({ title, elevation, desc, photos }) => {
   const [ref, inView] = useInView({
@@ -23,7 +36,7 @@ const Location = ({ title, elevation, desc, photos }) => {
   }, [setActive, title]);
 
   return (
-    <>
+    <motion.div initial="out" animate="in" exit="out" variants={pageVariants} transitions={pageTransitions}>
       <Container>
         <div className='videoContainer'>
           <video
@@ -51,7 +64,7 @@ const Location = ({ title, elevation, desc, photos }) => {
           ))}
         </Grid>
       </Container>
-    </>
+    </motion.div>
   );
 };
 

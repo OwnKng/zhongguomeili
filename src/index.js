@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./Components/App";
 import { ActiveProvider, ZoomProvider } from "./Components/hooks";
+import {BrowserRouter as Router} from 'react-router-dom';
 
 ReactDOM.render(
   <ZoomProvider>
     <ActiveProvider>
+      <Router>
       <App />
+      </Router>
     </ActiveProvider>
   </ZoomProvider>,
   document.getElementById("root")
