@@ -10,9 +10,9 @@ export const Content = styled.div`
   border-right: 1px solid rgb(75, 75, 75);
   display: grid;
   grid-template-columns:
-    3rem
+    1rem
     auto
-    3rem;
+    1rem;
 
   > * {
     grid-column: 2;

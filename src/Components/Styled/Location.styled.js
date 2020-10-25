@@ -25,6 +25,7 @@ export const Container = styled.div`
 
   .videoContainer {
     grid-column: 1 / -1;
+    height: 400px;
   }
 
   video {
