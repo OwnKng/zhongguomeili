@@ -74,6 +74,7 @@ export const Header = styled.header`
 
 export const Desc = styled.div`
   grid-area: desc;
+  font-size: 1rem;
 `;
 
 export const Hero = styled.img`
@@ -100,4 +101,9 @@ export const Footer = styled.footer`
   border-top: 1px solid white;
   opacity: 0.2;
   padding: 1rem 0rem 3rem 0rem;
+  text-align: center;
+
+  a {
+    color: white;
+  }
 `;

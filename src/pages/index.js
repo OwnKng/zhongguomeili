@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Layout from "../Components/Layout";
 
 // import the pages
-import { HuTiaoXia, Zhangye, Shangrila, Zhangjiajie } from "./locations";
+import { HuTiaoXia, Zhangye, Shangrila, Zhangjiajie, Huangshan } from "./locations";
 
 const Pages = () => {
   return (
@@ -14,6 +14,7 @@ const Pages = () => {
           <Route exact path='/zhangye' component={Zhangye}></Route>
           <Route exact path='/shangrila' component={Shangrila}></Route>
           <Route exact path='/zhangjiajie' component={Zhangjiajie}></Route>
+          <Route exact path='/huangshan' component={Huangshan}></Route>
         </Layout>
       </Router>
     </>

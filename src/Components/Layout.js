@@ -31,13 +31,14 @@ const Layout = ({ children }) => {
         <Header>
           <Title>中国美丽</Title>
           <Desc>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          China is well known for its sprawling megacities as well as its historical landmarks, 
+          such as the Great Wall, Terracotta Warriors and the Temple of Heaven. 
+          However, the country is less well known for its huge range of natural landscapes – including snow-capped 
+          mountains, rolling deserts and tropical rainforests. 
+          
+          <br />
+          <br />
+          This site is a collection of articles on some of the areas of outstanding natural beauty in China I have visited over the last few years.   
           </Desc>
           <Hero src='photos/china-map.png' alt='A 3d map of China' />
         </Header>
@@ -54,20 +55,18 @@ const Layout = ({ children }) => {
           <Link className={isActive("Zhangjiajie")} to='zhangjiajie'>
             Zhangjiajie
           </Link>
-          <Link className={isActive("Huangshan")} to='zhangye'>
+          <Link className={isActive("Huangshan")} to='huangshan'>
             Huangshan
-          </Link>
-          <Link className={isActive("Wuyishan")} to='zhangye'>
-            Wuyishan
           </Link>
           <Loadbar />
         </Controls>
         {children}
         <Footer>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          This website was built using <a href="https://reactjs.org/">React</a>. The photos are ones that I've taken while visiting these place. 
+          The elevation maps are created using the <a href="https://www.rayshader.com/">Rayshader</a> R package, using data from the <a href="https://www.usgs.gov/">US Geological Survey</a>.
+          <br />
+          <br />
+          The animations for this site use the <a href="https://www.framer.com/motion/">Framer Motion</a> React library. <a href="https://reactrouter.com/web/guides/quick-start">React Router</a> is used for routing between pages.
         </Footer>
       </Content>
       {zoom ? <Zoom clicked={zoom} /> : <></>}

@@ -49,5 +49,6 @@ export const Container = styled.div`
 
   article {
     grid-area: article;
+    font-size: 1rem;
   }
 `;
