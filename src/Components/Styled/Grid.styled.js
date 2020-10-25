@@ -4,7 +4,7 @@ export const Grid = styled.div`
   display: grid;
   grid-gap: 5px;
   width: 100%;
-  height: 1800px;
+  min-height: 1800px;
   margin-bottom: 2rem;
 
   grid-template-areas:
@@ -23,7 +23,7 @@ export const Grid = styled.div`
     "nine nine";
 
   @media only screen and (max-width: 600px) {
-    height: 2000px;
+    min-height: 2000px;
 
     grid-template-areas:
       "four"

@@ -35,7 +35,6 @@ const Layout = ({ children }) => {
           such as the Great Wall, Terracotta Warriors and the Temple of Heaven. 
           However, the country is less well known for its huge range of natural landscapes – including snow-capped 
           mountains, rolling deserts and tropical rainforests. 
-          
           <br />
           <br />
           This site is a collection of articles on some of the areas of outstanding natural beauty in China I have visited over the last few years.   
