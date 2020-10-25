@@ -4,7 +4,6 @@ export const Grid = styled.div`
   display: grid;
   grid-gap: 5px;
   width: 100%;
-  min-height: 1800px;
   margin-bottom: 2rem;
   grid-template-rows: repeat(13, 150px);
 
@@ -24,8 +23,7 @@ export const Grid = styled.div`
     "nine nine";
 
   @media only screen and (max-width: 600px) {
-    min-height: 2000px;
-
+    grid-template-rows: repeat(10, 150px);
     grid-template-areas:
       "four"
       "two"
